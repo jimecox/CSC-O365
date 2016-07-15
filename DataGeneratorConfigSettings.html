@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Timebars Config Settings</title>
+    <link href="css/bootstrap.min3.1.1.css" rel="stylesheet" />
+    <link href="css/jquery-ui1.11.3smoothness.css" rel="stylesheet" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Top logo and link to TimeBars-->
+    <div>
+        <div style="color: blue;"><a href="/Marketing.html"><img src="images/timebaricon1.png" width="20" height="20" /></a><a href="/default.html">Home</a>
+            
+            <a href="DataGeneratorTimebarsV2.html">| Timebars Admin </a>
+            <a href="DataGeneratorResources.html">| Resources Admin </a>
+            <a href="DataGeneratorMetaData.html">| MetaData Admin </a>
+            <a href="DataGeneratorTags.html">| Tags Admin </a>
+            <a href="DatabaseManagement.html">| DB Admin</a>
+            <a href="DataGeneratorConfigSettings.html"> Config Settings |</a>  
+        </div>
+    </div>
+    <!--<div style="color: blue;"><a href="/Marketing.html"><img src="images/timebaricon1.png" width="20" height="20" /></a><a href="/default.html">Home</a></div>
+    <div class="container">
+        <div class="apheading">
+            <h5>Timebars Admin Panel</h5>
+            <a href="DataGeneratorTimebarsV2.html">Populate Timebars</a>
+        </div>-->
+
+    <p></p>
+        <div id="ap-msg-area" style="color: red">
+        </div>
+        <div id="msg" style="color: red">
+        </div>
+        <div>
+            <hr />
+            <h4>Timebars Properties and Settings Form</h4>
+            <form id="search-form">
+                <div class="button-panel">
+                    <input type="button" class="btn btn-info" id="search-list-button" value="Show Settings" />
+                    <input class="btn btn-primary" type="button" id="populate-button" value="Populate Defaults" />
+                    <h4>App Config Settings</h4>
+                    <table class="table" id="ap-list" border='2'></table>
+                    <!--<input type="button" class="btn btn-info" id="showStdDaysOff" value="Show Standard Days Off" />-->
+                    <h4>System-wide Days Off</h4>
+                    <table class="table" id="stdDaysOffList" border='2'></table>
+                </div>
+            </form>
+        </div>
+        <form id="register-form">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apID" class="required">
+                                AP ID :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apID" name="apID" /> <em><span class="auto-style1">Must be unique</span></em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="ap-name" class="required">
+                                Title:
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="ap-name" name="ap-name" /> <em><span class="auto-style1">Must be unique</span></em>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apTS_WeeklyOrMonthly">
+                                Weekly or Monthly :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="apTS_WeeklyOrMonthly" name="WeeklyOrMonthly" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apTS_Start" class="required">
+                                TimeScale  Start :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="apTS_Start" name="apTS_Start" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apTS_Finish" class="required">
+                                TimeScale   Finish :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="apTS_Finish" name="apTS_Finish" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apTS_MonthlyPxFactor" class="required">
+                                Monthly Pixel Factor :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apTS_MonthlyPxFactor" name="apTS_MonthlyPxFactor" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apTS_WeeklyPxFactor" class="required">
+                                weekly Pixel Factor :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apTS_WeeklyPxFactor" name="apTS_WeeklyPxFactor" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apHelpCoordTop">
+                                Menu Distance from top :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apHelpCoordTop" name="apHelpCoordTop" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apHelpCoordLeft">
+                                Menu Distance from left :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apHelpCoordLeft" name="apHelpCoordLeft" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apStatusDate">
+                                apStatusDate :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="apStatusDate" name="apStatusDate" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apCustomerID">
+                                apCustomerID :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apCustomerID" name="apCustomerID" />
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="apAzureID">
+                                apAzureID :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="number" id="apAzureID" name="apAzureID" />
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </form>
+
+        <form id="delete-form">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td style="width: 175px">
+                            <label for="ap-key-to-edit">
+                                For CRUD Operations<br />Enter Key<br />
+                            </label>
+                        </td>
+                        <td style="width: 204px">
+                            <input title="Enter an intger representing the Key ID of item for change" type="number" id="ap-key-to-edit" name="ap-key-to-edit" />
+                        </td>
+                        <td style="width: 245px">then &nbsp;<input class="btn btn-primary" type="button" id="populate-Form" value="Populate form" />
+                        </td>
+                        <td>
+                            then &nbsp; <input class="btn btn-primary" type="button" id="update-button" value="Update" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="button-panel">
+                <div id="deleteAll" title="Are you sure..."></div>
+                <input type="button" class="btn btn-default" id="delete-button" value="Delete Record" />
+                <input type="button" class="btn btn-danger" id="clear-store-button" value="Delete All Records" />
+                <input class="btn btn-primary" type="button" id="add-button" value="Add New Record" />
+
+            </div>
+        </form>
+        <hr />
+    </div>
+
+    <br>
+    <!-- Debugger tool to view all data in the IDB -->
+    <!--<h3>IndexedDB Explorer</h3>
+    <iframe id='Iframe1' class='debuggerContainer' src='IDBExplorer/IDBExplorer.html?name=tbIndexedDB22' style="width: 700px; height: 700px;"></iframe>-->
+   
+    
+     <script src="Scripts-Framework/jquery-1.10.2.js"></script>
+    <script src="Scripts-Framework/jquery-ui-1.11.4.js"></script>
+    <script src="Scripts/DataGeneratorConfigSettings.js" type="text/javascript"></script>
+
+ 
+</body>
+</html>

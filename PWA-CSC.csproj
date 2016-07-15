@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B308C88-4BFB-48AA-A92B-531134F102DE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PWA_CSC</RootNamespace>
+    <AssemblyName>PWA-CSC</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cssJqueryUI\accordion.css" />
+    <Content Include="cssJqueryUI\all.css" />
+    <Content Include="cssJqueryUI\autocomplete.css" />
+    <Content Include="cssJqueryUI\base.css" />
+    <Content Include="cssJqueryUI\button.css" />
+    <Content Include="cssJqueryUI\core.css" />
+    <Content Include="cssJqueryUI\datepicker.css" />
+    <Content Include="cssJqueryUI\dialog.css" />
+    <Content Include="cssJqueryUI\draggable.css" />
+    <Content Include="cssJqueryUI\jquery-ui1.11.3Smoothness2.css" />
+    <Content Include="cssJqueryUI\menu.css" />
+    <Content Include="cssJqueryUI\progressbar.css" />
+    <Content Include="cssJqueryUI\resizable.css" />
+    <Content Include="cssJqueryUI\selectable.css" />
+    <Content Include="cssJqueryUI\selectmenu.css" />
+    <Content Include="cssJqueryUI\slider.css" />
+    <Content Include="cssJqueryUI\sortable.css" />
+    <Content Include="cssJqueryUI\spinner.css" />
+    <Content Include="cssJqueryUI\tabs.css" />
+    <Content Include="cssJqueryUI\theme.css" />
+    <Content Include="cssJqueryUI\tooltip.css" />
+    <Content Include="css\AppCss.css" />
+    <Content Include="css\bootstrap.min3.1.1.css" />
+    <Content Include="css\jquery.dataTables.bootstrap.min.css" />
+    <Content Include="css\jquery.dataTables.css" />
+    <Content Include="css\jquery.dataTables.min.css" />
+    <Content Include="css\TimeBarCss.css" />
+    <Content Include="DataGeneratorConfigSettings.html" />
+    <Content Include="Data\ConfigData.js" />
+    <Content Include="Demo1.aspx" />
+    <Content Include="images\delete.gif" />
+    <Content Include="images\diamondblack.png" />
+    <Content Include="images\r-arrow.png" />
+    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <Content Include="PDP-CSC-SetExcelWebAccessURI.aspx" />
+    <Content Include="PDP-CSC-GetUpdateProject.aspx" />
+    <Content Include="Scripts-Framework\jquery-2.1.4.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts-Framework\bootstrap.min3.1.2.js" />
+    <Content Include="Scripts-Framework\Chart.js" />
+    <Content Include="Scripts-Framework\Chart.StackedBar.js" />
+    <None Include="Scripts-Framework\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts-Framework\jquery-1.10.2.js" />
+    <Content Include="Scripts-Framework\jquery-1.10.2.min.js" />
+    <None Include="Scripts-Framework\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts-Framework\jquery-2.1.4.js" />
+    <Content Include="Scripts-Framework\jquery-2.1.4.min.js" />
+    <Content Include="Scripts-Framework\jquery-ui-1-11-3.js" />
+    <Content Include="Scripts-Framework\jquery-ui-1.11.4.js" />
+    <Content Include="Scripts-Framework\jquery-ui-1.11.4.min.js" />
+    <Content Include="Scripts-Framework\jquery.battatech.excelexport.js" />
+    <Content Include="Scripts-Framework\jquery.battatech.excelexport.min.js" />
+    <Content Include="Scripts-Framework\jquery.dataTables.bootstrap.min.js" />
+    <Content Include="Scripts-Framework\jquery.dataTables.js" />
+    <Content Include="Scripts-Framework\jquery.dataTables.min.js" />
+    <Content Include="Scripts-Framework\jquery.horizonScroll.js" />
+    <Content Include="Scripts-Framework\jquery.json-2.2.js" />
+    <Content Include="Scripts-Framework\jquery.json-2.2.min.js" />
+    <Content Include="Scripts-Framework\jquery.min.js" />
+    <Content Include="Scripts-Framework\jquery.mobile-1.2.0.min.js" />
+    <Content Include="Scripts-Framework\jquery.mobile-1.4.5.min.js" />
+    <Content Include="Scripts-Framework\jquery.touchSwipe.js" />
+    <Content Include="Scripts-Framework\json2.js" />
+    <Content Include="Scripts-Framework\moment-with-locales.js" />
+    <Content Include="Scripts-Framework\moment-with-locales.min.js" />
+    <Content Include="Scripts-Framework\moment.js" />
+    <Content Include="Scripts-Framework\moment.min.js" />
+    <Content Include="ScriptSamples\ListAndDataOperations1.js" />
+    <Content Include="ScriptSamples\ListsAndDataOperations2.js" />
+    <Content Include="ScriptSamples\MasterPage.js" />
+    <Content Include="ScriptSamples\MMS.js" />
+    <Content Include="ScriptSamples\NavNode.js" />
+    <Content Include="ScriptSamples\Provisioning.js" />
+    <Content Include="ScriptSamples\SampelCodeTimeSheets.js" />
+    <Content Include="ScriptSamples\SampleCodeREST.js" />
+    <Content Include="Scripts\AddWebPartToPage.js" />
+    <Content Include="Scripts\CoreFunctions.js" />
+    <Content Include="Scripts\CoreFunctions2.js" />
+    <Content Include="Scripts\CustomFieldCreateBulk2.js" />
+    <Content Include="Scripts\LookupTableAddEntries.js" />
+    <Content Include="Scripts\LookupTableGetUpdate.js" />
+    <Content Include="Scripts\ProjectUpdateWithQString.js" />
+    <Content Include="Scripts\ProjectUpdateInclCF.js" />
+    <Content Include="Scripts\ProjectUpdateInclCFBadFunction.js" />
+    <Content Include="ScriptSamples\SampleCodeAssignments.js" />
+    <Content Include="ScriptSamples\SampleCodeResourceBuildTeam.js" />
+    <Content Include="ScriptSamples\SampleCodeGeneral.js" />
+    <Content Include="ScriptSamples\SampleCodeTasks.js" />
+    <Content Include="Scripts\Scraps.js" />
+    <Content Include="Scripts\TasksCreateNew.js" />
+    <Content Include="Scripts\TasksGetDisplayREST.js" />
+    <Content Include="Scripts\TasksGetDisplay.js" />
+    <Content Include="Scripts\EWASetURI.js" />
+    <Content Include="ScriptSamples\SampleCodeLookupTables.js" />
+    <Content Include="ScriptSamples\SampleCodeSharePoint.js" />
+    <Content Include="ScriptSamples\SampleCodeCustomField.js" />
+    <Content Include="Scripts\CustomFieldGetUpdate.js" />
+    <Content Include="Scripts\PeoplePickerPDP.js" />
+    <Content Include="ScriptSamples\SampleCodeResources.js" />
+    <Content Include="Scripts\EWAGetRange.js" />
+    <Content Include="ScriptSamples\SamplesTB.js" />
+    <Content Include="Scripts\ProjectGetDisplay.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cssJqueryUI\images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1719</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1719/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

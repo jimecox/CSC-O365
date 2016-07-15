@@ -1,0 +1,22 @@
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\csc.exe
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\vbc.exe
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\VBCSCompiler.exe
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\PWA-CSC.dll.config
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\PWA-CSC.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\PWA-CSC.pdb
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\obj\Debug\PWA-CSC.csprojResolveAssemblyReference.cache
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\obj\Debug\PWA-CSC.dll
+C:\Users\jcox\SharePoint\PWA - Customisations\PWA-CSC\obj\Debug\PWA-CSC.pdb
+C:\Users\jcox\Documents\GitHub\CSC-O365\obj\Debug\PWA-CSC.dll
+C:\Users\jcox\Documents\GitHub\CSC-O365\obj\Debug\PWA-CSC.pdb

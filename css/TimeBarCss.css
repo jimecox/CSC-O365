@@ -1,0 +1,338 @@
+﻿
+.tbBarStyle {
+    font-family:'Arial' ; 
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background-image: url('/images/barappbgb.png');
+   
+}
+.tbBarStyleCommon {
+    font-family:'Arial' ; 
+    font-size: 12px;
+   
+}
+
+
+.tbBarStyleNewDynamicBar {
+    font-family:'Arial' ; 
+    font-size: 12px;
+    border: thin solid rgba(120, 120, 52, 255);
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background-image: url('/images/barappbgb.png');
+   box-shadow: 0 0 20px rgba(120, 120, 52, 255) !important;
+}
+.clsDroptoCreateTimebar {
+    width: 200px;
+    height: 50px;
+  
+    padding: 5px !important;
+
+    border: none !important;
+
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    visibility:hidden
+   
+}
+.clsAfterDroptoCreateTimebar {
+    background: rgba(244, 244, 215, 255);
+
+   
+   
+}
+
+.temp{
+    
+}
+.ui-selected{
+   box-shadow: 0 0 20px rgba(120, 120, 52, 255) !important;
+
+}
+
+.ui-selecting{
+background: rgba(244, 244, 215, 255);
+
+}
+
+
+
+.tbBarStylePf {
+    font-family: 'Arial';
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 35px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background: #FAFA9D;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5) !important;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+
+.tbBarStyleProj {
+    font-family: 'Arial';
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 35px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background: #8C8C2A;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5) !important;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tbBarStyleRel {
+    font-family: 'Arial';
+    font-size: 12px;
+    color: wheat;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 35px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background: #4D4D00;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5) !important;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.tbBarStyleTask {
+    font-family: 'Arial';
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background-image: url('/images/barappbgb.png');
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.tbBarStyleTask:hover {
+    text-overflow: inherit;
+    overflow: visible;
+    
+}
+
+
+.tbBarStyleTaskResDrop {
+    font-family: 'Arial';
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 25px;
+    text-align: left;
+    text-indent: 0px;
+    vertical-align: bottom;
+    background-image: url('/images/barappbgb.png');
+    white-space: nowrap;
+    /*width: 150px;*/
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.tbBarStyleTaskResDrop:hover {
+    text-overflow: inherit;
+    overflow: visible;
+    
+}
+
+
+.tbBarStyleMilestone {
+    font-family:'Arial' ; 
+    font-size: 12px;
+    border: 0px solid red;
+    padding: 2px;
+    overflow: hidden;
+    width: 125px;
+}
+
+.tbBarStyleMilestone img {
+    margin-right: 2px;
+    float: left;
+}
+.tbBarStyleAlloc {
+    font-family: 'Arial';
+    font-size: 12px;
+    color: blue;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background: gold;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5) !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tbBoxAlloc {
+    font-family: 'Arial';
+    font-size: 10px;
+    height: 15px;
+    text-align: left;
+    text-indent: 5px;
+    white-space: nowrap;
+    width: 50px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.tbBoxAlloc:hover {
+    text-overflow: inherit;
+    overflow: visible;
+    
+}
+
+.tbBarStackingPf1 {
+    z-index: 101;
+}
+.tbBarStackingRel3 {
+    z-index: 102;
+}
+.tbBarStackingProj2 {
+    z-index: 103;
+}
+.tbBarStackingTask4 {
+    z-index: 104;
+}
+.tbBarStackingMile5 {
+    z-index: 105;
+}
+.tbBarStackingAlloc6 {
+    z-index: 105;
+}
+.taskAndRelDrop {
+    padding-left: 5px;
+}
+.projAndRelDrop {
+    padding-left: 5px;
+}
+
+tbBarStackingRel3
+
+
+.holding area {
+background-image: url('/images/barappbgg.png');
+
+      font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    color: #000000;
+    font-weight: 400;
+    position: absolute;
+    text-transform: none;
+   
+    
+    border: 1px solid #ccc;
+    left: 10px;
+    top: 0;
+
+
+
+}
+
+.clsTabularSchedule {
+    font-family:Arial ; 
+    font-size: 12px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: top;
+    width: 100%
+}
+
+
+.tbBarDraggable {
+    position: absolute !important;
+    border-width: 0;
+
+}
+
+
+.tbBarResizable h3 {
+    text-align: left;
+    margin: 0;
+
+}
+
+
+
+.tab-bars-table{
+font-family:'Arial' (25px); 
+padding: 15px 15px 15px 15px
+
+}
+
+/*// test area*/
+
+.tbBarStyleTemp {
+    font-family:'Arial' ; 
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    height: 25px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: bottom;
+    background-image: url('/images/barappbgb.png');
+
+}
+.tbSubBarStyleTemp {
+    font-family:Arial ; 
+    font-size: 12px;
+    text-align: left;
+    text-indent: 5px;
+    vertical-align: top;
+}
+
+
+.tbBarDraggableTemp {
+    position: absolute;
+
+    border-width: 0;
+
+}
+
+
+.tbBarResizableTemp h3 {
+    text-align: left;
+    margin: 0;
+
+}
+
+
+
+.tab-bars-tableTemp{
+font-family:'Arial' (25px); 
+padding: 15px 15px 15px 15px
+
+}
+.btnTbPopupToGo {
+    visibility:hidden  
+}
+.btnTbPopupAlloc {
+    visibility:hidden  
+}
+.clickToReviseAlloc {
+    font-family:Arial ; 
+    font-size: 14px;
+    font-style: italic;
+}
+.clickToReviseToGo {
+    font-family:Arial ; 
+    font-size: 14px;
+    font-style: italic;
+}

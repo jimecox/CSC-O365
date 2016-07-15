@@ -1,0 +1,425 @@
+﻿/* Main page settings when using resizable canvas */
+/* remove the top and left whitespace */
+
+/*work this with tbEditable class to make timebar data editable in place and update idb*/
+[contenteditable]:hover:after {
+    content: ' edit';
+    font-style: italic;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #ccc;
+ 
+}
+
+[contenteditable]:hover, [contenteditable]:focus {
+    background: #ECEEFB;
+}
+
+[contenteditable]:focus {
+    padding: 2px;
+}
+
+    [contenteditable]:focus:after {
+        content: '';
+    }
+
+.tbEditable {
+	background: #F5F7F1;
+}
+
+.square {
+	width: 20px;
+	height: 20px;
+	background: red;
+}
+
+
+.box {
+    width: 950px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+    padding: 19px !important;
+    
+    background: rgba(255, 255, 255, 255);
+    border: none !important;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5) !important;
+    margin-left: auto;
+    margin-right: auto
+  
+}
+.box2 {
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+    border: 1px solid green;
+    padding: 8px !important;
+    background: rgba(255, 255, 255, 255);
+    border: none !important;
+    left: 270px;
+    top: 15px;
+    position:absolute;
+    z-index: 111;
+ }
+.box3 {
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+    border: 1px solid green;
+    padding: 8px !important;
+    background: rgba(255, 255, 255, 255);
+    border: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 111;
+
+ }
+.box4 {
+    width: 600px;
+    height: 100px;
+    overflow: auto;
+    /*background: rgba(233, 233, 204, 255);*/
+    background: rgba(255, 255, 255, 255);
+    position: relative;
+
+
+}
+
+.clsPopupOnBar {
+
+    z-index: 111;
+ }
+.tbTable1{
+    /*display:inline-block;*/
+ /*width: 50%;*/
+ /*float:left;*/
+}
+
+.metadataTaggerPopup {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+    border: 1px solid green;
+    padding: 8px !important;
+    background-color: rgba(239, 239, 200, 255);
+    border: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+ }
+.boxAuto {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    
+    padding: 19px !important;
+    background: rgba(255, 255, 255, 255);
+   
+    border: none !important;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5) !important;
+  
+}
+.txtarea{
+    max-width:100%;
+    min-height:200px;    
+    display:block;
+    width:100%;
+padding:10px;
+}
+
+.deleteBucket {
+    left: 2px;
+    top: 70px;
+    position: absolute;
+    visibility: hidden;
+
+}
+
+
+.tagBuckets {
+    position: absolute;
+    top: 65px;
+    left: 600px;
+    width: 575px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5) !important;
+    border: 1px solid green;
+    padding: 5px !important;
+    background: rgba(255, 255, 255, 255);
+    border: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 110;
+
+}
+
+.quickMenu {
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 8px;
+    background-color: #DC3C00;
+    color: #fff;
+    display: inline-block;
+    font-weight: 400;
+    position: relative;
+    text-transform: none;
+    background: #DC3C00;
+
+    border: 1px solid #ccc;
+    left: 0px;
+    top: 200px;
+
+}
+/* right click menus  */
+.pfRightClickMenu {
+visibility:hidden;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+.projRightClickMenu {
+visibility:hidden;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+.relRightClickMenu {
+visibility:hidden;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+.taskRightClickMenu {
+visibility:hidden;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+.canvasRightClickMenu {
+visibility:hidden;
+position: absolute;
+top: 5px;
+left: 5px;
+}
+
+/* tables for displaying dynamic data on timebars*/
+#divResourceTable {
+    width: 240px;
+    padding: 5px;
+    margin: 0;
+
+    cursor: move;
+    background-color: #FFFFFF;
+    text-align: left;
+    line-height: 18px;
+    border: 1px solid green;
+    visibility: hidden;
+    position: absolute;
+    top: 135px;
+    left: 135px;
+    z-index: 110;
+}
+
+#divForNewBarTable {
+    z-index: 110;
+    visibility: hidden;
+
+}
+
+
+#divForTagTable {
+    width: 240px;
+    padding: 5px;
+    margin: 0;
+
+    cursor: move;
+    background-color: #FFFFFF;
+    text-align: left;
+    line-height: 18px;
+    border: 1px solid green;
+    visibility: hidden;
+    position: absolute;
+    top: 135px;
+    left: 135px;
+    z-index: 110;
+}
+
+#divAllocationTable {
+    width: 510px;
+    padding: 0;
+    margin: 0;
+
+    cursor: move;
+    background-color: #FFFFFF;
+    text-align: left;
+    line-height: 18px;
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 110;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* just to be sure these are full screen*/
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/* To remove the scrollbars, and to show the canvas bounds */
+#tbCanvas {
+    display: block;
+   
+}
+
+
+.tbButtonSmall {
+    height: 19px;
+    
+    font-size: 12px;
+    vertical-align: central;
+    margin: 0;
+    padding: 2px 2px 2px 2px;
+}
+
+#tsDoubleClickArea {
+    position: fixed;
+    left: 0;
+    top: 20px;
+
+    width: 1200px;
+    height: 25px;
+}
+
+#tsController {
+    position: fixed;
+    left: 300px;
+    top: 43px;
+
+    width: 280px;
+    height: 320px;
+    background-color: #ffd800;
+    border-color: rgba(163, 174, 173, 0.55);
+    border-style: outset;
+    visibility:hidden;
+    z-index: 110;
+}
+.tsSliderDiv {
+
+    width: 220px;
+    /*visibility: hidden;*/
+
+}
+#tsStatusDate {
+    width: 90px;
+    background-color: rgba(229, 229, 229, 255);
+
+}
+
+
+#tb-listDivxxx {
+    position: fixed;
+    left: 400px;
+    top: 100px;
+
+    width: 850px;
+    height: 400px;
+    background-color: rgba(255, 216, 0, 0.38);
+    border-color: rgba(163, 174, 173, 0.55);
+    border-style: outset;
+}
+
+#tabsDataDraggableResizable {
+    position: fixed;
+    left: 430px;
+    top: 120px;
+
+    opacity: 0.9;
+    visibility: hidden;
+}
+
+/* was clsBucket css sizing for buckets, width is now 15px */
+.bucket {
+    width: 150px;
+    margin: 10px auto 0;
+    border: 1px solid #bbb;
+    background: blue;
+    font-family: 'Latha';
+    font-size: 12px;
+    border: thin solid rgba(246, 242, 242, 0.68);
+    text-align: left;
+    text-indent: 5px;
+    background-color: #C0C0C0;
+
+}
+
+#howToUseTimebarsContentArea {
+    width: 650px;
+    height: 900px;
+    margin: 10px auto 0;
+    border: 1px solid white;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 5px;
+    margin: 0;
+    padding: 4px 4px 4px 4px;
+    background-color: white;
+    position: fixed;
+    left: 10px;
+    top: 30px;
+
+}
+
+#tbToolbar {
+    position: fixed;
+    left: 1000px;
+    top: 60px;
+
+    width: 460px;
+    height: 640px;
+    background-color: rgba(255, 216, 0, 0.38);
+    border-color: rgba(163, 174, 173, 0.55);
+    border-style: outset;
+    visibility:hidden
+}
+
+
+
+/* css sizing for button dropdown test */
+
+#ButtonDropDownTextQ1 {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ff6a00;
+    margin: 0;
+}
+
+#ButtonDropDownTextQ2 {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #a3aead;
+    margin: 0;
+}
+
+#ButtonDropDownTextQ3 {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #a3aead;
+    margin: 0;
+}
+
+#draggableButtons {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid rgba(246, 237, 237, 0.59);
+    margin: 0;
+}
